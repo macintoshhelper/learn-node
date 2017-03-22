@@ -22,7 +22,7 @@ var router = (req, res) => {
 var staticFile = (req, res) => {
     // var parsedUrl = url.parse(req.url);
     var filePath = path.join(publicPath, req.url);
-    if (filePath.charAt(filePath.length-1) === '/') filePath = path.join(filePath, './index.html');
+    if (filePath.charAt(filePath.length-1) === '/') filePath = path.join(filePath, 'index.html');
     var extension = String(path.extname(filePath)).toLowerCase();
 
     var header = {'content-type': 'text/plain'};
