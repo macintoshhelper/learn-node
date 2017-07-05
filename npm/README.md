@@ -21,7 +21,7 @@ npm init -y
 Install a dependency with:
 ```js
 npm install --save <dependency-name>
-```js
+```
 
 or install a dev dependency with:
 ```js
