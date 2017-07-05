@@ -1,4 +1,5 @@
-# learn-nodejs
+# learn-node
+Learn Node and frameworks such as Express
 
 ### Vanilla Static File Handler:
 - Put this into a static file handler module, and call it in the router.
