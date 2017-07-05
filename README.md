@@ -1,6 +1,31 @@
 # learn-node
 Learn Node and frameworks such as Express
 
+## Getting Started
+
+### Mac Setup
+```sh
+# Install Homebrew package manager
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew update
+
+brew install node
+```
+
+### Debian Setup
+```sh
+apt-get update
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+source ~/.profile
+
+# Where 8 is the current Node version
+nvm install 8
+nvm use 8
+```
+
+## Useful Functions
+
 ### Vanilla Static File Handler:
 - Put this into a static file handler module, and call it in the router.
     ```js
@@ -15,16 +40,6 @@ Learn Node and frameworks such as Express
             '.js': 'text/javascript',
             '.css': 'text/css',
             '.json': 'application/json',
-    /*        '.png': 'image/png',
-            '.jpg': 'image/jpg',
-            '.gif': 'image/gif',
-            '.wav': 'audio/wav',
-            '.mp4': 'video/mp4',
-            '.woff': 'application/font-woff',
-            '.ttf': 'application/font-ttf',
-            '.eot': 'application/vnd.ms-fontobject',
-            '.otf': 'application/font-otf',
-            '.svg': 'application/image/svg+xml'*/
         };
         var contentType = mimeTypes[extension] || 'text/plain';
 
