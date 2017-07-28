@@ -26,6 +26,7 @@ const { Pool } = require('pg');
 // Create a params object from the URL (use config variables!)
 const params = url.parse('postgresql://user:password@hostname:5432/dbname');
 const dbName = params.pathname.split('/')[1];
+const [username, password] = params.auth.split(':');
 
 // Options object with all the connection extracted parameters
 const options = {
